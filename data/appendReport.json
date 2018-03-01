@@ -1,0 +1,13 @@
+{
+  "msg": "",
+  "obj": {
+    "content": {
+      "1-8": "1"
+    },
+    "mac": "abc",
+    "needReply": 0,
+    "time": 1494582606972,
+    "type": null
+  },
+  "success": true
+}

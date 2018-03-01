@@ -1,0 +1,58 @@
+{
+  "msg": "",
+  "obj": [
+    {
+      "electricList": [
+        {
+          "electricId": 1,
+          "mac": null,
+          "name": null,
+          "status": "1,1",
+          "type": 1
+        },
+        {
+          "electricId": 2,
+          "mac": null,
+          "name": null,
+          "status": "1,1,1",
+          "type": 1
+        }
+      ],
+      "homecode": null,
+      "homemac": "abc",
+      "roomId": 1,
+      "roomName": "www"
+    },
+    {
+      "electricList": [
+        {
+          "electricId": 3,
+          "mac": null,
+          "name": null,
+          "status": null,
+          "type": 4
+        }
+      ],
+      "homecode": null,
+      "homemac": "abc",
+      "roomId": 2,
+      "roomName": "eee"
+    },
+    {
+      "electricList": [
+        {
+          "electricId": null,
+          "mac": null,
+          "name": null,
+          "status": null,
+          "type": null
+        }
+      ],
+      "homecode": null,
+      "homemac": "abc",
+      "roomId": 3,
+      "roomName": "rr"
+    }
+  ],
+  "success": true
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=1.0">
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!--<meta http-equiv="Access-Control-Allow-Origin" content="*">-->
+    <title>注册页面</title>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--<img src="img/login-1@2x.png" class="backImg"/>-->
+<div class="backImg"></div>
+<div class="register" id="Register">
+    <div class="line increase">
+        <img src="img/icon_home@2x.png"/>
+        <label class="">所属小区</label>
+        <select name="zoneCode" id="zoneCode">
+            <option value="0">--请选择--</option>
+            <option value="100002d1p1z">龙辉花园</option>
+            <option value="100003d1p1z">测试</option>
+            <option value="100004d1p1z">测试小区</option>
+        </select>
+    </div>
+    <div class="line increase">
+        <img src="img/icon_role@2x.png"/>
+        <label class="">角色</label>
+        <select name="role" id="role">
+            <option value="0">--请选择--</option>
+            <option value="30">普通</option>
+            <option value="40">租客</option>
+            <option value="60">家人</option>
+            <option value="70">业主</option>
+        </select>
+    </div>
+    <div class="line owner">
+        <div class="" id="ownerInfo">请输入正确号码</div>
+        <img src="img/icon_phone@2x.png"/>
+        <label class="" for="ownerTel">业主电话</label>
+        <input type="text" pattern="1[3578]\d{9}" name="ownerTel" id="ownerTel" placeholder="业主号码" />
+    </div>
+    <div class="line">
+        <div class="" id="telInfo">请输入正确号码</div>
+        <img src="img/icon_phone@2x.png"/>
+        <label class="" for="cellPhone">电话号码</label>
+        <input type="text" pattern="1[3578]\d{9}" class="tel" id="cellPhone" name="userTel" required="required" placeholder="电话号码"  autofocus/>
+    </div>
+    <div class="line">
+        <div class="" id="vCodeInfo">验证码</div>
+        <img src="img/icon_verification-code@2x.png"/>
+        <label class="" for="checkCode">验证码</label>
+        <input type="text" class="vCode" name="checkCode" id="checkCode" required="required" placeholder="验证码"/>
+        <input type="button" id="send" value="获取验证码" />
+    </div>
+    <div class="line">
+        <div class="" id="pwdInfo">密码</div>
+        <img src="img/icon_password@2x.png"/>
+        <label class="" for="password">密码</label>
+        <input type="password" class="pwd" id="password" name="password" required="required" pattern="[a-zA-Z0-9_]{6,12}" placeholder="6-12位密码" minlength="6" maxlength="12" autocomplete="off" autofocus/>
+    </div>
+    <div class="line">
+        <div class="" id="cPwdInfo">确认密码</div>
+        <img src="img/icon_password@2x.png"/>
+        <label class="" for="rePwd">确认密码</label>
+        <input type="password" class="cPwd" name="rePwd" id="rePwd"  pattern="[a-zA-Z0-9_]{6,12}"  minlength="6" maxlength="12" required="required" placeholder="确认密码" autocomplete="off" autofocus/>
+    </div>
+    <input type="submit" id="register_btn" value="注册" onclick="">
+</div>
+<p class="toLogin center">已有账号？<a href="index.html">点击登录</a></p>
+
+<script src="js/serIp.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/register.js"></script>
+<script>
+    document.getElementsByTagName('html')[0].style.fontSize=window.screen.width/10 +'px';
+</script>
+</body>
+</html>

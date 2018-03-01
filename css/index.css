@@ -1,0 +1,977 @@
+body{
+    /*background: url(../img/login-1@2x.png) no-repeat center center;*/
+    /*background-attachment: fixed;*/
+    /*background-size: cover cover;*/
+    /*-webkit-background-size:cover cover;*/
+    /*-moz-background-size:cover cover;*/
+    /*-o-background-size:cover cover;*/
+    background: #f5f5f5;
+    /*闪屏处理*/
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.backImg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    background: url(../img/login-1@2x.png) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+.center{text-align: center;}
+.left{text-align: left;}
+.right{text-align: right;}
+.line{
+    border-bottom: 1px solid #fff;
+    width: 87%;
+    margin: 0.14rem auto 0;
+    padding: 0;
+}
+.line img{
+    margin: 0 0 0 1.73%;
+    vertical-align: middle;
+    width: 8.62%;
+}
+.line label{
+    color: #fff;
+    font-size: 0.46rem;
+    width: 21.15%;
+}
+input{
+    background: transparent;
+    border: none;
+    font-size: 0.46rem;
+    /*width: 3rem;*/
+    width: 52%;
+    color: #fff;
+    outline: none;
+}
+.fl{float: left;}
+.fr{float: right;}
+
+/*index.html*/
+.logo{
+    width: 2.94rem;
+    display: block;
+    margin: 2.5rem auto 1.3rem;
+}
+.toLogin .line label{
+    display: inline-block;
+    width: 1.84rem;
+}
+.forget{
+    margin: 0.3rem auto 0;
+    font-size: 0.26rem;
+    color: #fff;
+    width: 87%;
+}
+.forget label{
+    margin-right: 1.5rem;
+    font-size: 0.4rem;
+}
+.toRegister span{
+    margin: 0 0.27rem;
+}
+#login_btn,#register_btn{
+    color: #30b15f;
+    background: #fff;
+    margin: 1.6rem auto 0;
+    width: 87%;
+    height: 1.2rem;
+    border-radius: 6px;
+    display: block;
+}
+#remember,#autoLogin{
+    width: 0.4rem;
+    height: 0.4rem;
+    vertical-align: sub;
+}
+
+/*tab-page.html*/
+.top,header{
+    background: #30b15f;
+    height: 0.56rem;
+    position: fixed;
+    width: 10rem;
+    top: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 1.17rem;
+    color: #fff;
+    position: fixed;
+    width: 10rem;
+    top: 0.53rem;
+}
+header h3{
+    margin: 0;
+    line-height: 1.17rem;
+    font-size: 0.45rem;
+}
+#sceneModel{display:none;}
+header .toLast{
+    position: fixed;
+    left: 0;
+    top: 0.53rem;
+    width: 1.17rem;
+    height: 1.17rem;
+    display: inline-block;
+    text-align: center;
+    border: 0;
+    background: url(../img/icon_back@2x.png) no-repeat center center;
+    background-size: 0.53rem 0.53rem;
+}
+.page .content{
+    background: #f5f5f5;
+    margin: 1.7rem auto 1.31rem;
+    min-height: 14.78rem;
+}
+.page .footer{
+    position: fixed;
+    bottom: 0;
+    height: 1.31rem;
+    background: #fff;
+    font-size: 0.5rem;
+    width: 100%;
+    z-index: 9;
+}
+ul{list-style: none;}
+ul:after,.detail>div:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.page .footer .tips{
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    height: 100%;
+}
+.footer .tips li{
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    font-size: 0.27rem;
+    box-sizing: border-box;
+}
+.tips li>a{
+    text-decoration: none;
+    color: #999;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.tips li a span{
+    display: block;
+    height: 0.84rem;
+    /*margin-bottom: 0.05rem;*/
+    background: url(../img/icon_equipment@2x.png) no-repeat center bottom;
+    background-size: 0.59rem 0.59rem;
+}
+.tips li a span.scene{background-image: url(../img/icon_scene-control@2x.png);}
+.tips li a span.remote{background-image: url(../img/icon_remote-control@2x.png);}
+.tips li a span.me{background-image: url(../img/icon_user@2x.png);}
+#content1{
+    text-align: center;
+}
+#content2 .electric:last-child{margin-bottom: 1.58rem;}
+.tips .active a{
+    color: #30b15f;
+}
+.tips .active a span{
+    background-image: url(../img/icon_equipment-_-press@2x.png);
+    /*background: url(../img/icon.png) no-repeat -303px -99px;*/
+}
+.tips .active a span.scene{background-image: url(../img/icon_scene-control-_-press@2x.png);}
+.tips .active a span.remote{background-image: url(../img/icon_remote-control_-press@2x.png);}
+.tips .active a span.me{background-image: url(../img/icon_user-_-press@2x.png);}
+.container1 .box{
+    display: none;
+}
+.container1 .box.active{
+    display: block;
+}
+dl{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+.electric dt{
+    background: url(../img/img_light_no--color@2x.png) no-repeat center center;
+    background-size: 80% 100%;
+    width: 100%;
+    height: 3.51rem;
+    display: block;
+    text-align: center;
+}
+/*电器状态*/
+.electric dt.active{background-image: url(../img/img_light@2x.png);}
+.light dt{background-image: url(../img/img_light_no--color@2x.png);}
+.dimmer_light dt{background-image: url(../img/img_dimming-lamp_no-color@2x.png);}
+.curtain dt{background-image: url(../img/img_curtains_no-color@2x.png);}
+.socket dt{background-image: url(../img/img_socket_no-color@2x.png);}
+.air dt{background-image: url(../img/img_air-conditioner_no-color@2x.png);}
+.tv dt{background-image: url(../img/img_tv_no-color@2x.png);}
+.fans dt{background-image: url(../img/img_fan_no-color@2x.png);}
+.iptv dt{background-image: url(../img/img_IPTV-no-color@2x.png);}
+.stb dt{background-image: url(../img/img_set-top-box_no-color@2x.png);}
+.dvd dt{background-image: url(../img/img_DVD-Player_no-color@2x.png);}
+.projector dt{background-image: url(../img/img_projector_no-color@2x.png);}
+
+.light dt.active{background-image: url(../img/img_light@2x.png);}
+.dimmer_light dt.active{background-image: url(../img/img_dimming-lamp@2x.png);}
+.curtain dt.active{background-image: url(../img/img_curtains@2x.png);}
+.socket dt.active{background-image: url(../img/img_socket@2x.png);}
+.air dt.active{background-image: url(../img/img_air-conditioner@2x.png);}
+.tv dt.active{background-image: url(../img/img_tv@2x.png);}
+.fans dt.active{background-image: url(../img/img_fan@2x.png);}
+.iptv dt.active{background-image: url(../img/img_IPTV@2x.png);}
+.stb dt.active{background-image: url(../img/img_set-top-box@2x.png);}
+.dvd dt.active{background-image: url(../img/img_DVD-Player@2x.png);}
+.projector dt.active{background-image: url(../img/img_projector@2x.png);}
+
+/*情景模式*/
+/*electric-0: 自定义模式，*/
+/*electric-1: 全开模式，*/
+/*electric-2: 全关模式，*/
+/*electric-3: 起床模式，*/
+/*electric-4: 就餐模式，*/
+/*electric-5: 离家模式，*/
+/*electric-6: 回家模式，*/
+/*electric-7: 会客模式，*/
+/*electric-8: 休闲模式，*/
+/*electric-9: 就寝模式，*/
+/*electric-10: 影院模式，*/
+/*electric-11: 起夜模式，*/
+.electric-0 dt{background-image: url(../img/img_user-defined-no-color@2x.png);}
+.electric-1 dt{background-image: url(../img/img_open_no-color@2x.png);}
+.electric-2 dt{background-image: url(../img/img_close_no-color@2x.png);}
+.electric-3 dt{background-image: url(../img/img_get-up-no-color@2x.png);}
+.electric-4 dt{background-image: url(../img/img_eat-_no-color@2x.png);}
+.electric-5 dt{background-image: url(../img/img_leave-home-no-color@2x.png);}
+.electric-6 dt{background-image: url(../img/img_go-home-no-color@2x.png);}
+.electric-7 dt{background-image: url(../img/img_-reception_no-color@2x.png);}
+.electric-8 dt{background-image: url(../img/img_leisure-time-no-color@2x.png);}
+.electric-9 dt{background-image: url(../img/img_sleep_no-color@2x.png);}
+.electric-10 dt{background-image: url(../img/img_movie-theatre_no-color@2x.png);}
+.electric-11 dt{background-image: url(../img/img_night_no-color@2x.png);}
+
+.electric-0 dt.active{background-image: url(../img/img_user-defined@2x.png);}
+.electric-1 dt.active{background-image: url(../img/img_open@2x.png);}
+.electric-2 dt.active{background-image: url(../img/img_close@2x.png);}
+.electric-3 dt.active{background-image: url(../img/img_get-up@2x.png);}
+.electric-4 dt.active{background-image: url(../img/img_eat@2x.png);}
+.electric-5 dt.active{background-image: url(../img/img_leave-home@2x.png);}
+.electric-6 dt.active{background-image: url(../img/img_go-home@2x.png);}
+.electric-7 dt.active{background-image: url(../img/img_-reception@2x.png);}
+.electric-8 dt.active{background-image: url(../img/img_leisure-time@2x.png);}
+.electric-9 dt.active{background-image: url(../img/img_sleep@2x.png);}
+.electric-10 dt.active{background-image: url(../img/img_movie-theatre@2x.png);}
+.electric-11 dt.active{background-image: url(../img/img_night@2x.png);}
+dd{
+    display: inline-block;
+    text-align: center;
+    font-size: 0.37rem;
+    font-weight: bold;
+    color: #333;
+    padding-right: 1.15rem;
+    background: url(../img/icon_OFF-1@2x.png) no-repeat right center;
+    background-size: 0.64rem 0.32rem;
+}
+dd.noBag{
+    padding: 0;
+    background: none;
+}
+dd.modRoom{
+    position: absolute;
+    right: 0.32rem;
+    top: 0.32rem;
+    font-size: 0.3rem;
+}
+.roomList{
+    position: fixed;
+    width: 100%;
+    height: 1.07rem;
+    overflow: auto;
+    z-index: 10;
+    background: #fff;
+    box-shadow: 0px 0px 26px 0px rgba(48,177,95,0.35);
+}
+.grads {
+    font-size: 0.4rem;
+    height: 1.07rem;
+    line-height: 1.07rem;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    position: absolute;
+}
+#content1 .grads li {
+    width: 2rem;
+    height: 100%;
+    margin: 0;
+}
+.grads li a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: #999;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+}
+.grads li:hover,
+.grads li.active {
+    color: #30b15f;
+    background: #fff;
+}
+#content1 .grads li:hover a,
+#content1 .grads li.active a {
+    color: #30b15f;
+    background: #fff;
+    border-color: #30b15f;
+}
+.detail{
+    width: 100%;
+    padding: 1.07rem 0 1.57rem;
+    background: #f5f5f5;
+    z-index: 5;
+}
+.fontColor{
+    color: #30b15f;
+    background-image: url(../img/icon_on@2x.png);
+}
+.fonts{
+    color: #30b15f;
+}
+.fbold{
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+.electric{
+    margin: 2.67% 0 0 2.67%;
+    background: #fff;
+    width: 46%;
+    height: 4.22rem;
+    box-shadow: 0px 0px 26px 0px rgba(48,177,95,0.35);
+}
+/*调光灯*/
+#dimmer_light{
+    background: #f5f5f5;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 1.7rem;
+    z-index: 99;
+    left: 0;
+    display: none;
+}
+#cans{
+    width: 100%;
+    height: 8rem;
+    background: url(../img/img_dimming-lamp@2x.png) no-repeat center 0.92rem #fff;
+    background-size: 47% 57%;
+    margin: 2.5% 0;
+    text-align: center;
+    box-shadow: 0px 0px 26px 0px rgba(48,177,95,0.35);
+
+}
+.brightness{
+    background: url(../img/icon_brightness@2x.png) no-repeat left center #fff;
+    background-size: 1.06rem 1.06rem;
+    height: 1.6rem;
+    display: block;
+    padding-left: 1.06rem;
+    margin: 0%;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 26px 0px rgba(48,177,95,0.35);
+
+}
+.brightness>span{
+    font-size: 0.4rem;
+    height: 100%;
+    width: 0.826rem;
+    display: inline-block;
+    line-height: 1.6rem;
+    color: #333;
+    margin: 0;
+}
+.brightness #title{width: 1rem;}
+body{margin:0;padding:0;font-size:12px;}
+.scale_panel{
+    width:70.46%;
+    display: inline-block;
+    margin: 0 0.95%;
+}
+.scale{
+     background-color: rgba(160,220,182,0.7);//#a0dcb6;
+     width: 100%;
+     height: 0.16rem;
+     position: relative;
+     border-radius: 0.08rem;
+ }
+.scale span{
+    width:0.38rem;
+    height:0.38rem;
+    background:#fff;
+    border-radius:50%;
+    position:absolute;
+    left:-2px;
+    top:-0.11rem;
+    cursor:pointer;
+    box-shadow: 0px 1px 10px 0px rgba(48,177,95,0.6);
+}
+.scale div{
+    background-color: #30b15f;
+    height: 0.16rem;
+    width: 0;
+    border-radius: 0.08rem;
+}
+
+/*会客模式*/
+#electric-7,.modelInfo{
+    background: #f5f5f5;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 1.7rem;
+    z-index: 99;
+    left: 0;
+    display: none;
+}
+#electric-7 img,.modelInfo img{
+    width: 100%;
+    /*height: 5.067rem;*/
+}
+#electric-7 .elecDifference,.modelInfo .elecDifference{
+    padding: 0;
+    margin: 0.26rem 0;
+    box-shadow: 0px 0px 26px 0px rgba(48,177,95,0.35);
+}
+#electric-7 .elecDifference .elecImg,.modelInfo .elecDifference .elecImg{
+    height: 1.36rem;
+    line-height: 1.36rem;
+    margin-bottom: 0.16rem;
+    font-size: 0.37rem;
+    padding-left: 1.64rem;
+    box-sizing: border-box;
+    background: url(../img/img_light@2x.png) no-repeat 0.027rem center #fff;
+    background-size: 1.47rem 1.47rem;
+    box-shadow: 0px 0px 26px 0px rgba(48,177,95,0.35);
+
+}
+#electric-7 .elecDifference .light,
+.modelInfo .elecDifference .light{background-image: url(../img/img_light-l@2x.png);}
+.modelInfo .elecDifference .dimmer_light{background-image: url(../img/img_dimming-l-lamp@2x.png);}
+.modelInfo .elecDifference .curtain{background-image: url(../img/img_curtains-l@2x.png);}
+.modelInfo .elecDifference .socket{background-image: url(../img/img_socket-l@2x.png);}
+.modelInfo .elecDifference .fans{background-image: url(../img/img_fan-l@2x.png);}
+.modelInfo .elecDifference .iptv{background-image: url(../img/img_IPTV-l@2x.png);}
+.modelInfo .elecDifference .projector{background-image: url(../img/img_projector-l@2x.png);}
+#electric-7 .elecDifference .tv,
+.modelInfo .elecDifference .tv{background-image: url(../img/img_tv-l@2x.png);}
+#electric-7 .elecDifference .stb,
+.modelInfo .elecDifference .stb{background-image: url(../img/img_set-l-top-box@2x.png);}
+#electric-7 .elecDifference .air,
+.modelInfo .elecDifference .air{background-image: url(../img/img_air-l-conditioner@2x.png);}
+#electric-7 .elecDifference .dvd,
+.modelInfo .elecDifference .dvd{background-image: url(../img/img_DVD-l-Player@2x.png);}
+#electric-7 .elecDifference .elecImg span,.modelInfo .elecDifference .elecImg span{
+    display: inline-block;
+    color: #999;
+}
+#electric-7 .elecDifference .elecImg .elecName,.modelInfo .elecDifference .elecImg .elecName{color: #333;}
+#electric-7 .elecDifference .elecRoom,.modelInfo .elecDifference .elecRoom{float: right;}
+#electric-7 .elecDifference .elecStatus,.modelInfo .elecDifference .elecStatus{
+    float: right;
+    padding: 0 0.56rem 0 0.4rem;
+    width: 2.2rem;
+    text-align: right;
+}
+/*模式面板模式开关*/
+.onModel{
+    display: inline-block;
+    width: 1rem;
+    height: 1.17rem;
+    position: fixed;
+    right: 0.3rem;
+}
+/*按钮更新样式*/
+.tab-pane button{
+    border: 1px solid #8dc8e5;
+    border-radius: 10px;
+    padding: 0px 10px;
+    box-shadow: -1px -1px 5px 2px inset;
+    height: 40px;
+    background: #70b8e1;
+    font-family: "kaiti";
+    font-weight: bold;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/*退出*/
+.logout{
+    float: left;
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+    border: 2px solid #aaa;
+    padding: 5px;
+    color: #fff;
+    border-radius: 20px;
+    background: transparent;
+}
+
+/*去注册*/
+.toRegister,.toLogin{
+    margin-top: 1em;
+    font-size: 0.4rem;
+    color: #fff;
+}
+.toRegister a,.forget a,.toLogin a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*register.html*/
+.register{
+    margin: 2rem auto 0;
+}
+.register .line label{
+    /*width: 2rem;*/
+    display: inline-block;
+    width: 22.99%;
+}
+.register .line select{
+    width: 45%;
+    border: 0;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    color: #fff;
+    font-size: 0.46rem;
+}
+.register .line select option{
+    background: #30b15f;
+    color: #fff;
+    font-size: 0.46rem;
+}
+.register .line input{
+    font-size: 0.42rem;
+}
+.register .line .vCode{
+    /*width: 1.7rem;*/
+    width: 19.54%;
+}
+.register .line #send{
+    background: #fff;
+    /*width: 2.53rem;*/
+    width: 29.2%;
+    height: 0.77rem;
+    color: #f19716;
+    border-radius: 6px;
+    vertical-align: top;//middle;
+    display: inline-block;
+    text-align: center;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #C1DACA;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #C1DACA;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #C1DACA;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #C1DACA;
+}
+.register .increase{
+    margin-top: 0.5rem;
+}
+.register .owner{display: none;}
+#telInfo,#vCodeInfo,#pwdInfo,#cPwdInfo,#ownerInfo{
+    opacity: 0;
+    font-size: 0.33rem;
+    font-weight: 600;
+    color: #d0352b;
+    margin: 0 0 0 3.45%;
+    padding: 0 0 0 5.18%;
+    background: url(../img/icon_prompt%20@2x.png) no-repeat left center;
+    position: relative;
+    bottom: -1.3rem;
+    background-size: 0.32rem 0.32rem;
+}
+
+/*远程开锁*/
+#content3 .lock{
+    width: 100%;
+    height: 14.78rem;
+    box-sizing: border-box;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-size: 0.4rem;
+}
+#content3 .lock li{
+    height: 1.31rem;
+    line-height: 1.31rem;
+    background: #fff;
+    margin-bottom: 0.16rem;
+    box-shadow: 0px 0px 26px 0px rgba(48,177,95,0.35);
+}
+#content3 .lock li:first-child{margin-top: 0.27rem;}
+#content3 .lock .doorLock{margin-left: 0.6rem;}
+#content3 .lock .unlocking{
+    width: 1.8rem;
+    height: 1.31rem;
+    line-height: 1.31rem;
+    display: inline-block;
+    box-sizing: border-box;
+    background: url(../img/lock.png) no-repeat 90% center #fff;
+    background-size: 1.2rem 1.2rem;
+    float: right;
+}
+#content3 .toCreate{
+    height: 1.07rem;
+    width: 84%;
+    padding: 0;
+    margin: 3rem 8% 0;
+    border: 0;
+    background: #30b15f;
+    font-size: 0.4rem;
+    bottom: 2.47rem;
+    border-radius: 0.14rem;
+    color: #fff;
+    position: relative;
+}
+.qrCodeHide{
+    margin: 0 auto;
+    border-radius: 6px;
+    display: none;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    height: 14.78rem;
+    top: 1.7rem;
+    z-index: 100;
+}
+.defaultTime{
+    margin: 35px 0;
+    width: 8em;
+}
+.qCode{
+    margin:30px auto 15px;
+}
+.toImg{
+    margin: 10px 0;
+}
+
+/*unlock*/
+.btns{
+    display: inline-block;
+    border-radius: 0.33rem;
+    width: 3.73rem;
+    height: 0.67rem;
+    font-size: 0.4rem;
+    line-height: 0.67rem;
+    padding: 0;
+    margin: 0.25rem 0;
+}
+.btns .tobtn{
+    display: inline-block;
+    color: rgba(155,234,170,0.8);
+    border: 1px solid #9beaaa;
+    width: 1.865rem;
+    height: 0.67rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.btns li:first-child{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-right: 0;
+}
+.btns li:last-child{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: 0;
+}
+.btns .active{
+    background: #fff;
+    color: #37a85d;
+}
+
+/*分享二维码*/
+.setTime{display: none;}
+
+#content3 .setTime ul.nav-pills{
+    width: 100%;
+    height: 1.07rem;
+    line-height: 1.07rem;
+    background: #fff;
+    font-size: 0.4rem;
+    box-shadow: 0px 0px 26px 0px rgba(48,177,95,0.35);
+}
+#content3 .setTime .nav-pills li{
+    background: #fff;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    margin: 0;
+}
+#content3 .setTime .nav-pills li a{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    color: #999;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+}
+#content3 .setTime .nav-pills li.active a{
+    color: #30b15f;
+    border-color: #30b15f;
+}
+#content3 .setTime .tab-content{
+    background: #fff;
+    width: 100%;
+    height: 13.17rem;
+    margin: 0.27rem 0;
+    box-shadow: 0px 0px 26px 0px rgba(48,177,95,0.35);
+}
+.setTime .tab-content .tab-pane span{
+    font-size: 0.37rem;
+    margin: 1.95rem 0 0 0.8rem;
+    display: inline-block;
+}
+.setTime .tab-content .row{
+    margin: 1.6rem auto;
+    height: 1.51rem;
+    line-height: 1.51rem;
+}
+.setTime .tab-content .tab-pane .row>span{
+    position: relative;
+    top: -0.19rem;
+    left: -0.27rem;
+}
+.setTime .tab-content .tab-pane .row>span.last{
+    left: 0.27rem;
+}
+#forMinute,#forDate{
+    background: transparent;
+    text-align: center;
+}
+#forDate{
+    display: inline-block;
+    width: 8rem;
+    height: 1.07rem;
+    margin: 1.82rem auto;
+    border: 1px solid #ccc;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/*有效分钟*/
+#reduce,#add{
+    width:2.5em;
+    margin: 0 0.5em;
+    position: static;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent;
+    box-shadow: 0 0 0 0;
+    border-color: #d9534f;
+}
+#forMinute{
+    display: inline-block;
+    width: 8em;
+    vertical-align: middle;
+}
+.slider-container{
+    display: inline-block;
+}
+.forMin{
+    border: 1px solid;
+    border-radius: 5px;
+    border-bottom: 2px solid red;
+    width: 30px;
+    display: inline-block;
+    padding: 2px;
+}
+.show{display: block;}
+.back{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    border-radius: 27px;
+    padding: 0;
+    border: 0;
+}
+.qrCodeHide .toImgShare{
+    height: 1.07rem;
+    width: 84%;
+    padding: 0;
+    margin: 3rem 8% 0;
+    border: 0;
+    background: #30b15f;
+    font-size: 0.4rem;
+    bottom: 2.47rem;
+    border-radius: 0.14rem;
+    color: #fff;
+    position: relative;
+}
+.backToQr{
+    display: none;
+}
+/*截图分享说明*/
+.otherStep{
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px;
+    color: red;
+}
+
+/*我的模块*/
+#content4 .setup{
+    width: 100%;
+    height: 14.24rem;
+    position: absolute;
+    font-size: 0.4rem;
+}
+#content4 .setup div{
+    margin-bottom: 0.27rem;
+    padding-left: 0.47rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: url(../img/more.png) no-repeat 97% center #fff;
+    background-size: 0.7rem 0.7rem;
+    box-shadow: 0px 0px 26px 0px rgba(48,177,95,0.35);
+}
+#content4 .portrait{
+    margin: -1px 0 0;
+    padding: 0;
+    font-size: 0.4rem;
+    color: #fff;
+    background: #30b15f;
+    height: 5.6rem;
+    margin-bottom: 0.27rem;
+}
+.portrait .headPortrait{
+    height: 4rem;
+    background: url(../img/my.png) no-repeat center center;
+    background-size: 3rem 3rem;
+    z-index: 1000;
+    position: relative;
+}
+
+/*登陆后，顶部显示用户名*/
+#headTop{
+    position: relative;
+    top: 3px;
+    right: 5px;
+    text-align: right;
+    font-weight: 500;
+}
+/*注销*/
+.cancel{
+    padding: 2px 3px;
+    color: #333;
+    font-weight: 500;
+}
+
+/*场景控制*/
+#content2 .room{
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding: 0 5px;
+}
+#content2 .room li{
+    width: 23%;
+}
+#content2 .room li:nth-child(2){
+    width: 31%;
+}
+#content2 .model{
+    position: relative;
+    width: 90%;
+    margin: 0px auto;
+    display: none;
+}
+#content2 .model .modelElectric{
+    margin: 0;
+    border: 0;
+    box-shadow: 0px 0px;
+    height: 45px;
+    line-height: 45px;
+}
+#content2 .model .modelElectric dt{
+    width: 60px;
+}
+#content2 .model .modelElectric dd{
+    margin-left: 10px;
+}
+/*无网络状态*/
+#lostNet{
+    position: fixed;
+    top: 1.7rem;
+    width: 100%;
+    height: 14.78rem;
+    z-index: 999;
+    font-size: 0.4rem;
+    text-align: center;
+    background: #fff;
+    display: none;
+}
+#lostNet ul{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 13%;
+}
+#lostNet ul li{
+    margin: 0.35rem;
+}
+#lostNet ul li img{
+    height: 5.7rem;
+}
+#lostNet ul li button{
+    background: #30b15f;
+    width: 5.6rem;
+    height: 1.07rem;
+    line-height: 1.07rem;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 0.59rem;
+}

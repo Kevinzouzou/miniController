@@ -1,0 +1,233 @@
+{
+  "msg": "",
+  "obj": [
+    {
+      "electricList": [
+        {
+          "electricId": 1,
+          "mac": "02:a4:c9:5b:84:9f",
+          "name": null,
+          "status": "9,99,99,99",
+          "type": 1
+        },
+        {
+          "electricId": 2,
+          "mac": "02:a4:c9:5b:84:9f",
+          "name": null,
+          "status": "1,1,1",
+          "type": 1
+        }
+      ],
+      "homecode": null,
+      "homemac": "02:a4:c9:5b:84:9f",
+      "roomId": 1,
+      "roomName": "www"
+    },
+    {
+      "electricList": [
+        {
+          "electricId": 31,
+          "mac": "abc",
+          "name": "light",
+          "status":"0",
+          "type": 1
+        },
+        {
+          "electricId": 32,
+          "mac": "abc",
+          "name": "dimmerLight",
+          "status":"1",
+          "type": 2
+        },
+        {
+          "electricId": 33,
+          "mac": "abc",
+          "name": "curtain",
+          "status":"0",
+          "type": 4
+        },
+        {
+          "electricId": 34,
+          "mac": "abc",
+          "name": "socket",
+          "status":"1",
+          "type": 5
+        },
+        {
+          "electricId": 35,
+          "mac": "abc",
+          "name": "air",
+          "status":"1,1,1",
+          "type": 7
+        },
+        {
+          "electricId": 36,
+          "mac": "abc",
+          "name": "tv",
+          "status":"1",
+          "type": 9
+        },
+        {
+          "electricId": 37,
+          "mac": "abc",
+          "name": "fans",
+          "status":"0",
+          "type": 40
+        },
+        {
+          "electricId": 38,
+          "mac": "abc",
+          "name": "IPTV",
+          "status":"1",
+          "type": 41
+        },
+        {
+          "electricId": 39,
+          "mac": "abc",
+          "name": "stb",
+          "status":"0",
+          "type":42
+        },
+        {
+          "electricId": 40,
+          "mac": "abc",
+          "name": "dvd",
+          "status":"1",
+          "type": 43
+        },
+        {
+          "electricId": 41,
+          "mac": "abc",
+          "name": "projector",
+          "status":"1",
+          "type": 44
+        },
+        {
+          "electricId": 8,
+          "mac": "abc",
+          "name": null,
+          "status":"1,0,1,1",
+          "type": 2
+        },
+        {
+          "electricId": 9,
+          "mac": "abc",
+          "name": null,
+          "status": "1,1,0,1",
+          "type": 3
+        },
+        {
+          "electricId": 10,
+          "mac": "abc",
+          "name": null,
+          "status":"1,1,1,0,1",
+          "type": 4
+        },
+        {
+          "electricId": 11,
+          "mac": "abc",
+          "name": null,
+          "status": "0,1,0,1",
+          "type": 5
+        },
+        {
+          "electricId": 12,
+          "mac": "abc",
+          "name": null,
+          "status":"1,1,1,0,1",
+          "type": 6
+        },
+        {
+          "electricId": 13,
+          "mac": "abc",
+          "name": null,
+          "status": "0,1,0,1",
+          "type": 7
+        },
+        {
+          "electricId": 14,
+          "mac": "abc",
+          "name": null,
+          "status":"1",
+          "type": 8
+        },
+        {
+          "electricId": 15,
+          "mac": "abc",
+          "name": null,
+          "status": "1,1",
+          "type": 9
+        },
+        {
+          "electricId": 16,
+          "mac": "abc",
+          "name": null,
+          "status":"1",
+          "type": 10
+        },
+        {
+          "electricId": 17,
+          "mac": "abc",
+          "name": null,
+          "status": "1",
+          "type": 11
+        },
+        {
+          "electricId": 3,
+          "mac": "abc",
+          "name": null,
+          "status": null,
+          "type": 4
+        }
+      ],
+      "homecode": null,
+      "homemac": "abc",
+      "roomId": 2,
+      "roomName": "eee"
+    },
+    {
+      "electricList": [
+        {
+          "electricId": 4,
+          "mac": "aabc",
+          "name": null,
+          "status":"1",
+          "type": 8
+        },
+        {
+          "electricId": 5,
+          "mac": "aabc",
+          "name": null,
+          "status": "0",
+          "type": 8
+        },
+        {
+          "electricId": 6,
+          "mac": "aabc",
+          "name": null,
+          "status": "1",
+          "type": 11
+        },
+        {
+          "electricId": 7,
+          "mac": "aabc",
+          "name": null,
+          "status": "0",
+          "type": 11
+        },
+        {
+          "electricId": null,
+          "mac": "aabc",
+          "name": null,
+          "status": null,
+          "type": null
+        }
+      ],
+      "homecode": null,
+      "homemac": "aabc",
+      "roomId": 3,
+      "roomName": "rr"
+    }
+  ],
+  "success": true
+}

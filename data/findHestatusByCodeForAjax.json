@@ -1,0 +1,22 @@
+{
+  "msg": "hasnew",
+  "obj": [
+    {
+      "etype": "8",
+      "homemac": "abc",
+      "id": 1,
+      "id_1": 1,
+      "modifiedtime": "2017-05-12 17:50:06",
+      "status": "1"
+    },
+    {
+      "etype": "1",
+      "homemac": "abc",
+      "id": 2,
+      "id_1": 2,
+      "modifiedtime": null,
+      "status": "1,1,1"
+    }
+  ],
+  "success": true
+}

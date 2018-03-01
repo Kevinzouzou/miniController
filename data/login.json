@@ -1,0 +1,20 @@
+{
+"msg": "10900-49100002d1p1zAb0u1f03h-1494224429609",
+  "obj": {
+  "cellphone": "123456",
+  "code": "100002d1p1zAb0u1f03h",
+  "createdatetime": "2017-04-13 17:49:42",
+  "email": null,
+  "grantlevel": 100,
+  "id": 1,
+  "isowner": 0,
+  "modifydatetime": null,
+  "owenerphone": null,
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "role": null,
+  "username": "123456",
+  "zonecode": null
+  },
+"success": true
+}
+
